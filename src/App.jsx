@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import Navbar from './Components/Navbar/Navbar'
 import Hero from './Components/Hero/Hero'
 import Programs from './Components/Programs/Programs'
@@ -8,10 +8,21 @@ import Campus from './Components/Campus/Campus'
 import Testimonials from './Components/Testimonials/Testimonials'
 import Contact from './Components/Contact/Contact'
 import Footer from './Components/Footer/Footer'
-
+import Loader from './Components/Loader/Loader';
 const App = () => {
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    // Simulate a data fetching process
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000); // Change the timeout as per your requirement
+  }, []);
   return (
+    <>
+
     <div>
+      {loading ?(<Loader/>):(
+        <>
       <Navbar />  
       <Hero />  
       <div className="container">
@@ -26,7 +37,10 @@ const App = () => {
         <Contact/>
         <Footer/>
       </div> 
+      </>
+      )}
     </div>
+    </>
   )
 }
 
