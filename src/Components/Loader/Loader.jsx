@@ -5,15 +5,15 @@ const Loader = () => {
   return (
     <>
      <div className="loader-container">
-     <div class="card">
-  <div class="loader">
+     <div className="card">
+  <div className="loader">
     <p>loading</p>
-    <div class="words">
-      <span class="word">EDUCITY</span>
-      <span class="word">#Educity University</span>
-      <span class="word">#Smart Education</span>
-      <span class="word">#EduSmart</span>
-      <span class="word">#Happy Education</span>
+    <div className="words">
+      <span className="word">EDUCITY</span>
+      <span className="word">#Educity University</span>
+      <span className="word">#Smart Education</span>
+      <span className="word">#EduSmart</span>
+      <span className="word">#Happy Education</span>
     </div>
   </div>
 </div>
