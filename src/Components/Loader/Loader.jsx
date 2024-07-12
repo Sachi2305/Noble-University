@@ -9,10 +9,10 @@ const Loader = () => {
   <div className="loader">
     <p>loading</p>
     <div className="words">
-      <span className="word">EDUCITY</span>
-      <span className="word">#Educity University</span>
+      <span className="word">NOBLE UNIVERSITY</span>
+      <span className="word">#Noble University</span>
       <span className="word">#Smart Education</span>
-      <span className="word">#EduSmart</span>
+      <span className="word">#NobleSmart</span>
       <span className="word">#Happy Education</span>
     </div>
   </div>
