@@ -24,6 +24,15 @@
     transform: translate(-50%,-50%);
     cursor: pointer;
 }
+.play-icon:hover{
+    transform: scale(1.2); /* Enlarge the icon on hover */
+    opacity: 0.8; 
+    top: 40%;
+    cursor: pointer;
+    width: 60px;
+    left: 42%;
+    position: absolute;
+}
 .about h3{
     font-weight: 600;
     font-weight: 16px;
