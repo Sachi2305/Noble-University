@@ -1,17 +1,17 @@
 
-  /* .loader-container {
+   .loader-container {
     display: flex;
     justify-content: center;
     
     align-items: center;
     height: 100vh;
-    /* Adjust as needed */
- */
+    
+   }
   
   
   .card {
     /* color used to softly clip top and bottom of the .words container */
-    --bg-color: #212121;
+   
     background-color: var(--bg-color);
     padding: 1rem 2rem;
     border-radius: 1.25rem;
