@@ -22,7 +22,7 @@
     overflow: hidden;
 }
 .slider ul{
-    display: flex ;
+    display: flex;
     width: 200%;
     overflow-x: hidden;
     transition: 0.5s;
@@ -55,37 +55,107 @@
     color:#212EA0 ;
 }
 
+
 /*---------media query--------*/
 
-@media (max-width: 800px){
-    .testimonials{
+@media (max-width: 1024px) {
+    .testimonials {
+        padding: 0 60px;
+    }
+
+    .next-btn, .back-btn {
+        padding: 12px;
+        width: 45px;
+    }
+
+    .slider ul li {
+        padding: 15px;
+    }
+
+    .slide {
+        padding: 30px;
+    }
+
+    .slide img {
+        width: 55px;
+        border: 3px solid #212EA0;
+    }
+}
+
+@media (max-width: 800px) {
+    .testimonials {
         padding: 0 40px;
     }
-    .next-btn, .back-btn{
+
+    .next-btn, .back-btn {
         padding: 10px;
         width: 35px;
     }
-    .testimonials ul li{
-         padding: 10px;
-    }
-    .slide{
+
+    .slider ul li {
         padding: 10px;
     }
+
+    .slide {
+        padding: 20px;
+    }
+
     .slide img {
         width: 50px;
         border: 3px solid #212EA0;
     }
 }
+
 @media (max-width: 600px) {
-    .user-info{
+    .testimonials {
+        padding: 0 20px;
+    }
+
+    .next-btn, .back-btn {
+        padding: 8px;
+        width: 30px;
+    }
+
+    .slider ul li {
+        padding: 8px;
+    }
+    .slider ul {
+        display: flex;
+        width: 400%; /* Change to accommodate 4 slides */
+        overflow-x: hidden;
+        transition: transform 0.5s ease; /* Smooth transition */
+        padding: 0; /* Remove default padding */
+        margin: 0; /* Remove default margin */
+    }
+    .slide {
+        box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        padding: 15px;
+        border-radius: 10px;
+        color: #676767;
+        line-height: 1.4;
+        height: 100%; /* Ensure slide takes full height */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+
+    .slide img {
+        width: 45px;
+        border: 2px solid #212EA0;
+    }
+
+    .user-info {
         display: block;
         margin-bottom: 10px;
         font-size: 12px;
     }
+
     .user-info h3 {
         font-size: 16px;
     }
-    .slider p{
+
+    .slider p {
         font-size: 12px;
     }
 }

@@ -38,7 +38,7 @@ const contact = () => {
     <div className='contact'>
         <div className='contact-col'>
         <h3>Send us a message <img src={msg_icon}  alt="" /></h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, qui natus? Natus repudiandae dolore, corrupti fugiat voluptas voluptate in? Perferendis molestias esse deleniti distinctio sapiente velit? Est eaque illum magni.</p>
+        <p>Whether you have questions, feedback, or need assistance, we're here to help. Reach out to us using the information below.</p>
         <ul>
             <li> <img src={mail_icon} alt="" />Contact@SPate.dev</li>
             <li> <img src={phone_icon} alt="" />+1 123-456-7890</li>

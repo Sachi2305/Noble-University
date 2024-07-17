@@ -1,15 +1,22 @@
-.contact{
+.contact {
     margin: 80px auto;
     max-width: 90%;
     display: flex;
-    align-content: center;
     justify-content: space-between;
+    /* Change align-content to align-items for vertical centering */
+    align-items: center;
 }
-.contact-col{
+
+.contact-col {
     flex-basis: 48%;
     color: #676767;
+    /* Add padding to create space between columns on smaller screens */
+    padding: 0 10px;
+    /* Adjust margin-bottom to reduce space between columns */
+    margin-bottom: 20px;
 }
-.contact-col h3{
+
+.contact-col h3 {
     color: #000F38;
     font-weight: 500;
     font-size: 25px;
@@ -17,24 +24,30 @@
     align-items: center;
     margin-bottom: 20px;
 }
-.contact-col h3 img{
+
+.contact-col h3 img {
     width: 35px;
     margin-left: 10px;
 }
-.contact-col p{
-    max-width: 450px;
+
+.contact-col p {
+    max-width: 100%; /* Adjust max-width for responsiveness */
     line-height: 1.3;
 }
+
 .contact-col ul li {
     display: flex;
     align-items: center;
-    margin: 20px 0;
+    margin: 10px 0; /* Reduce margin between list items */
 }
+
 .contact-col ul li img {
     width: 25px;
     margin-right: 10px;
 }
-.contact form input, .contact form textarea{
+
+.contact form input,
+.contact form textarea {
     display: block;
     width: 100%;
     background: #EBECEF;
@@ -42,20 +55,36 @@
     border: 0;
     outline: 0;
     margin-bottom: 15px;
-    margin-top: 5px;
     resize: none;
 }
-.contact-col span{
-    display: block;
-    margin: 20px 0;
-}
-/*---------media query--------*/
 
-@media (max-width: 700px){
-    .contact{
-        display: block;
+.contact-col span {
+    display: block;
+    margin: 10px 0; /* Reduce margin between elements */
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 700px) {
+    .contact {
+        display: block; /* Switch to a stacked layout */
+        margin-top: 60px; /* Adjust top margin for spacing */
     }
-    .contact-col{
-        padding: 20px;
+
+    .contact-col {
+        flex-basis: 100%; /* Take up full width on smaller screens */
+        padding: 0px; /* Add padding for spacing */
+        margin-bottom: 30px; /* Increase bottom margin for space between columns */
     }
+.contact-col p{
+    padding: 4px;
+}
+    .contact-col h3 {
+        font-size: 22px; /* Decrease font size for smaller screens */
+    }
+
+    .contact-col h3 img {
+        width: 30px; /* Adjust image size */
+    }
+
+   
 }
